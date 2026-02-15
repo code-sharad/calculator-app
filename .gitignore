@@ -1,0 +1,36 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
+# Build outputs (if any)
+dist/
+build/
+
+# Node modules (if added later)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# macOS
+.AppleDouble
+.LSOverride
