@@ -113,6 +113,12 @@ body {
   align-items: center;
 }
 
+.calculator-container.minimal {
+  background: #f7f8fa;
+  min-height: 100vh;
+  padding: 0;
+}
+
 /* Calculator Main */
 .calculator {
   background: rgba(20, 20, 28, .96);

@@ -20,68 +20,40 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main class="calculator-container" role="main">
-      <div class="calculator" role="application" aria-label="Calculator">
-        <div class="display" role="region" aria-label="Calculator display">
-          <div
-            class="previous-operand"
-            id="previous-operand"
-            aria-label="Previous calculation"
-            aria-live="polite"
-          ></div>
-          <div
-            class="current-operand"
-            id="current-operand"
-            aria-label="Current value"
-            aria-live="assertive"
-          >
-            0
-          </div>
-        </div>
+    <main class="calculator-container minimal" role="main">
+  <div class="calculator minimal">
+    <div class="display minimal">
+      <div class="previous-operand" id="previous-operand"></div>
+      <div class="current-operand" id="current-operand">0</div>
+    </div>
+    <div class="buttons minimal">
+      <button class="btn function" data-action="clear" aria-label="Clear">C</button>
+      <button class="btn function" data-action="delete" aria-label="Delete">⌫</button>
+      <button class="btn function" data-action="percent" aria-label="Percent">%</button>
+      <button class="btn operator" data-action="operator" data-value="/" aria-label="Divide">÷</button>
 
-        <div class="buttons" role="group" aria-label="Calculator buttons">
-          <button class="btn function" data-action="clear" aria-label="Clear all">AC</button>
-          <button class="btn function" data-action="delete" aria-label="Delete last digit">
-            DEL
-          </button>
-          <button class="btn function" data-action="percent" aria-label="Percentage">%</button>
-          <button class="btn operator" data-action="operator" data-value="/" aria-label="Divide">
-            ÷
-          </button>
+      <button class="btn number" data-value="7">7</button>
+      <button class="btn number" data-value="8">8</button>
+      <button class="btn number" data-value="9">9</button>
+      <button class="btn operator" data-action="operator" data-value="*" aria-label="Multiply">×</button>
 
-          <button class="btn number" data-value="7" aria-label="Seven">7</button>
-          <button class="btn number" data-value="8" aria-label="Eight">8</button>
-          <button class="btn number" data-value="9" aria-label="Nine">9</button>
-          <button class="btn operator" data-action="operator" data-value="*" aria-label="Multiply">
-            ×
-          </button>
+      <button class="btn number" data-value="4">4</button>
+      <button class="btn number" data-value="5">5</button>
+      <button class="btn number" data-value="6">6</button>
+      <button class="btn operator" data-action="operator" data-value="-" aria-label="Subtract">−</button>
 
-          <button class="btn number" data-value="4" aria-label="Four">4</button>
-          <button class="btn number" data-value="5" aria-label="Five">5</button>
-          <button class="btn number" data-value="6" aria-label="Six">6</button>
-          <button class="btn operator" data-action="operator" data-value="-" aria-label="Subtract">
-            −
-          </button>
+      <button class="btn number" data-value="1">1</button>
+      <button class="btn number" data-value="2">2</button>
+      <button class="btn number" data-value="3">3</button>
+      <button class="btn operator" data-action="operator" data-value="+" aria-label="Add">+</button>
 
-          <button class="btn number" data-value="1" aria-label="One">1</button>
-          <button class="btn number" data-value="2" aria-label="Two">2</button>
-          <button class="btn number" data-value="3" aria-label="Three">3</button>
-          <button class="btn operator" data-action="operator" data-value="+" aria-label="Add">
-            +
-          </button>
+      <button class="btn number zero" data-value="0">0</button>
+      <button class="btn number" data-value=".">.</button>
+      <button class="btn operator equals" data-action="calculate" aria-label="Equals">=</button>
+    </div>
+  </div>
+</main>
 
-          <button class="btn number zero" data-value="0" aria-label="Zero">0</button>
-          <button class="btn number" data-value="." aria-label="Decimal point">.</button>
-          <button class="btn operator equals" data-action="calculate" aria-label="Calculate result">
-            =
-          </button>
-        </div>
-      </div>
-
-      <footer class="keyboard-hints" aria-label="Keyboard shortcuts">
-        <p>Keyboard: Numbers, + − × ÷, Enter, Esc, Backspace, %</p>
-      </footer>
-    </main>
 
     <script type="module" src="./main.ts"></script>
   </body>
